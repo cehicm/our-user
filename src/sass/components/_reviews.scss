@@ -1,13 +1,19 @@
 @use "../variables/colors" as colors;
-
-.our-users-wrapper {
-	position: absolute;
-	top: 50%;
-	right: 50%;
-	transform: translate(50%, -50%);
-}
+@import "../variables/breakpoints";
 
 .our-users {
+	&-wrapper {
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		transform: translate(50%, -50%);
+		@include sc-breakpoint(1024) {
+			width: 90vw;
+		}
+		@include sc-breakpoint(1820) {
+			width: auto;
+		}
+	}
 	&-wrapper--top {
 		display: flex;
 		justify-content: space-between;
@@ -46,6 +52,38 @@
 		}
 		&--two {
 			margin-right: 80px;
+		}
+	}
+}
+
+.testimonials {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-gap: 20px;
+
+	.card-box {
+		max-width: 350px;
+		height: 234px;
+		background-color: colors.$dark-purple;
+		border-radius: 8px;
+		padding: 50px 30px;
+
+		&--top {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+
+		&--img {
+			border-radius: 50%;
+		}
+
+		&--status {
+			display: block;
+		}
+
+		&--text {
+			padding: 20px 0;
 		}
 	}
 }

@@ -24,6 +24,7 @@ body {
 
 .card-box--name {
   font-size: 13px;
+  line-height: 1.5;
   color: #ffffff;
 }
 .card-box--status {
@@ -42,7 +43,16 @@ body {
   right: 50%;
   transform: translate(50%, -50%);
 }
-
+@media (min-width: 1024px) {
+  .our-users-wrapper {
+    width: 90vw;
+  }
+}
+@media (min-width: 1820px) {
+  .our-users-wrapper {
+    width: auto;
+  }
+}
 .our-users-wrapper--top {
   display: flex;
   justify-content: space-between;
@@ -78,6 +88,33 @@ body {
 }
 .reviews-wrapper--two {
   margin-right: 80px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+.testimonials .card-box {
+  max-width: 350px;
+  height: 234px;
+  background-color: #512051;
+  border-radius: 8px;
+  padding: 50px 30px;
+}
+.testimonials .card-box--top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.testimonials .card-box--img {
+  border-radius: 50%;
+}
+.testimonials .card-box--status {
+  display: block;
+}
+.testimonials .card-box--text {
+  padding: 20px 0;
 }
 
 .bg-img {
