@@ -43,6 +43,43 @@ body {
   transform: translate(50%, -50%);
 }
 
+.our-users-wrapper--top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.our-users--text-content {
+  width: 40%;
+}
+.our-users--text-content h1 {
+  margin: 0;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.reviews-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 445px;
+  margin-top: 10px;
+  padding: 16px 77px 16px 40px;
+  background-color: #f7f2f7;
+  border-radius: 8px;
+}
+.reviews-wrapper--text {
+  margin-left: 40px;
+}
+.reviews-wrapper--one {
+  margin-right: 160px;
+}
+.reviews-wrapper--two {
+  margin-right: 80px;
+}
+
 .bg-img {
   position: absolute;
 }
