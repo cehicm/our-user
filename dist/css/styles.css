@@ -51,7 +51,14 @@ body {
   line-height: 22px;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .our-users-wrapper {
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   right: 50%;
@@ -69,13 +76,8 @@ body {
   }
 }
 .our-users-wrapper--top {
-  margin-top: 300px;
+  margin-top: 550px;
   margin-bottom: 50px;
-}
-@media (min-width: 768px) {
-  .our-users-wrapper--top {
-    margin-top: 200px;
-  }
 }
 @media (min-width: 1024px) {
   .our-users-wrapper--top {
@@ -83,7 +85,7 @@ body {
     gap: 20px;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 0;
+    margin-top: 150px;
   }
 }
 .our-users--text-content {
@@ -99,6 +101,7 @@ body {
   padding: 0 20px;
 }
 .our-users--text-content .main-text {
+  margin: 20px 0;
   padding: 0 20px;
 }
 
@@ -117,7 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
+  padding: 15px 0;
   margin-top: 14px;
   background-color: #f7f2f7;
   border-radius: 8px;
@@ -130,13 +133,17 @@ body {
 @media (min-width: 1024px) {
   .reviews-wrapper {
     flex-direction: row;
-    max-width: 350px;
+    max-width: 500px;
     padding: 16px 77px 16px 40px;
   }
+}
+.reviews-wrapper--text {
+  margin-top: 10px;
 }
 @media (min-width: 1024px) {
   .reviews-wrapper--text {
     margin-left: 40px;
+    margin-top: 0;
   }
 }
 .reviews-wrapper--text a {
@@ -197,10 +204,12 @@ body {
   }
 }
 .testimonials .card-box {
-  height: 235px;
-  padding: 30px;
+  max-height: 300px;
+  padding: 35px 40px;
+  margin-bottom: 20px;
   background-color: #512051;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 @media (min-width: 1820px) {
   .testimonials .card-box {

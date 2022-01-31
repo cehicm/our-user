@@ -1,8 +1,15 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 .our-users {
 	&-wrapper {
+		box-sizing: border-box;
+
 		position: absolute;
 		top: 50%;
 		right: 50%;
@@ -16,17 +23,14 @@
 		}
 	}
 	&-wrapper--top {
-		@include sc-breakpoint(768) {
-			margin-top: 200px;
-		}
 		@include sc-breakpoint(1024) {
 			display: flex;
 			gap: 20px;
 			align-items: baseline;
 			justify-content: space-between;
-			margin-top: 0;
+			margin-top: 150px;
 		}
-		margin-top: 300px;
+		margin-top: 550px;
 		margin-bottom: 50px;
 	}
 
@@ -41,6 +45,7 @@
 				padding: 0 20px;
 			}
 			&-text {
+				margin: 20px 0;
 				padding: 0 20px;
 			}
 		}
@@ -63,21 +68,23 @@
 		}
 		@include sc-breakpoint(1024) {
 			flex-direction: row;
-			max-width: 350px;
+			max-width: 500px;
 			padding: 16px 77px 16px 40px;
 		}
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 15px;
+		padding: 15px 0;
 		margin-top: 14px;
 		background-color: colors.$background-light-pink;
 		border-radius: 8px;
 
 		&--text {
+			margin-top: 10px;
 			@include sc-breakpoint(1024) {
 				margin-left: 40px;
+				margin-top: 0;
 			}
 
 			a {
@@ -134,10 +141,12 @@
 		@include sc-breakpoint(1820) {
 			max-height: 214px;
 		}
-		height: 235px;
-		padding: 30px;
+		max-height: 300px;
+		padding: 35px 40px;
+		margin-bottom: 20px;
 		background-color: colors.$dark-purple;
 		border-radius: 8px;
+		box-sizing: border-box;
 
 		&--top {
 			display: flex;
