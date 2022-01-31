@@ -59,14 +59,15 @@
 .testimonials {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	grid-gap: 20px;
+	justify-content: space-between;
+	grid-gap: 62px;
 
 	.card-box {
 		max-width: 350px;
-		height: 234px;
+		max-height: 200px;
 		background-color: colors.$dark-purple;
 		border-radius: 8px;
-		padding: 50px 30px;
+		padding: 30px;
 
 		&--top {
 			display: flex;
@@ -75,6 +76,8 @@
 		}
 
 		&--img {
+			height: 40px;
+			width: 40px;
 			border-radius: 50%;
 		}
 
@@ -83,13 +86,29 @@
 		}
 
 		&--text {
-			padding: 20px 0;
+			margin: 0;
+			padding-top: 20px;
+		}
+
+		&--two {
+			margin-top: 40px;
+		}
+		&--three {
+			margin-top: 80px;
 		}
 	}
 }
 
 .bg-img {
 	position: absolute;
+
+	&--top {
+		top: 0;
+		left: 0;
+		img {
+			width: 1500px;
+		}
+	}
 
 	&--bottom {
 		bottom: 0;

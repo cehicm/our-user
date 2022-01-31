@@ -93,14 +93,15 @@ body {
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-gap: 20px;
+  justify-content: space-between;
+  grid-gap: 62px;
 }
 .testimonials .card-box {
   max-width: 350px;
-  height: 234px;
+  max-height: 200px;
   background-color: #512051;
   border-radius: 8px;
-  padding: 50px 30px;
+  padding: 30px;
 }
 .testimonials .card-box--top {
   display: flex;
@@ -108,17 +109,33 @@ body {
   gap: 30px;
 }
 .testimonials .card-box--img {
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 .testimonials .card-box--status {
   display: block;
 }
 .testimonials .card-box--text {
-  padding: 20px 0;
+  margin: 0;
+  padding-top: 20px;
+}
+.testimonials .card-box--two {
+  margin-top: 40px;
+}
+.testimonials .card-box--three {
+  margin-top: 80px;
 }
 
 .bg-img {
   position: absolute;
+}
+.bg-img--top {
+  top: 0;
+  left: 0;
+}
+.bg-img--top img {
+  width: 1500px;
 }
 .bg-img--bottom {
   bottom: 0;
