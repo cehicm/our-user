@@ -1,0 +1,45 @@
+@use "../variables/colors" as colors;
+
+body {
+	font-family: "Spartan";
+}
+
+.main {
+	&-title {
+		font-size: 48px;
+		font-weight: 700;
+		color: colors.$dark-purple;
+	}
+	&-text {
+		font-size: 15px;
+		line-height: 25px;
+		font-weight: 500;
+		color: colors.$light-purple;
+	}
+}
+
+.review-wrapper--text {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px;
+	text-align: left;
+	color: colors.$dark-purple;
+}
+
+.card-box {
+	&--name {
+		font-size: 13px;
+		color: colors.$white;
+	}
+
+	&--status {
+		font-size: 13px;
+		font-weight: 400;
+		color: colors.$verified-pink;
+	}
+
+	&--text {
+		color: colors.$white;
+		line-height: 22px;
+	}
+}
