@@ -2,10 +2,24 @@ body {
   font-family: "Spartan";
 }
 
+.our-users-wrapper--top {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .our-users-wrapper--top {
+    text-align: left;
+  }
+}
+
 .main-title {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
   color: #512051;
+}
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 48px;
+  }
 }
 .main-text {
   font-size: 15px;
@@ -51,58 +65,139 @@ body {
 }
 @media (min-width: 1820px) {
   .our-users-wrapper {
-    width: auto;
+    width: 70vw;
   }
 }
 .our-users-wrapper--top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin-top: 300px;
   margin-bottom: 50px;
 }
-.our-users--text-content {
-  width: 40%;
+@media (min-width: 768px) {
+  .our-users-wrapper--top {
+    margin-top: 200px;
+  }
 }
-.our-users--text-content h1 {
+@media (min-width: 1024px) {
+  .our-users-wrapper--top {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+}
+.our-users--text-content {
+  width: 90vw;
+}
+@media (min-width: 1024px) {
+  .our-users--text-content {
+    width: 40%;
+  }
+}
+.our-users--text-content .main-title {
   margin: 0;
+  padding: 0 20px;
+}
+.our-users--text-content .main-text {
+  padding: 0 20px;
 }
 
 .reviews {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .reviews {
+    align-items: flex-end;
+  }
 }
 .reviews-wrapper {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 445px;
-  margin-top: 10px;
-  padding: 16px 77px 16px 40px;
+  padding-top: 15px;
+  margin-top: 14px;
   background-color: #f7f2f7;
   border-radius: 8px;
 }
-.reviews-wrapper--text {
-  margin-left: 40px;
+@media (min-width: 768px) {
+  .reviews-wrapper {
+    max-height: 78px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews-wrapper {
+    flex-direction: row;
+    max-width: 350px;
+    padding: 16px 77px 16px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews-wrapper--text {
+    margin-left: 40px;
+  }
 }
 .reviews-wrapper--one {
-  margin-right: 160px;
+  margin-right: 0;
+}
+@media (min-width: 1024px) {
+  .reviews-wrapper--one {
+    margin-right: 80px;
+  }
+}
+@media (min-width: 1400px) {
+  .reviews-wrapper--one {
+    margin-right: 160px;
+  }
+}
+@media (min-width: 1820px) {
+  .reviews-wrapper--one {
+    margin-right: 80px;
+  }
 }
 .reviews-wrapper--two {
-  margin-right: 80px;
+  margin-right: 0;
+}
+@media (min-width: 1024px) {
+  .reviews-wrapper--two {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .reviews-wrapper--two {
+    margin-right: 80px;
+  }
+}
+@media (min-width: 1820px) {
+  .reviews-wrapper--two {
+    margin-right: 40px;
+  }
 }
 
 .testimonials {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  justify-content: space-between;
-  grid-gap: 62px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1024px) {
+  .testimonials {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .testimonials .card-box {
-  max-width: 350px;
-  max-height: 200px;
+  height: 235px;
+  padding: 30px;
   background-color: #512051;
   border-radius: 8px;
-  padding: 30px;
+}
+@media (min-width: 1820px) {
+  .testimonials .card-box {
+    max-height: 214px;
+  }
 }
 .testimonials .card-box--top {
   display: flex;
@@ -121,11 +216,15 @@ body {
   margin: 0;
   padding-top: 20px;
 }
-.testimonials .card-box--two {
-  margin-top: 40px;
+@media (min-width: 1024px) {
+  .testimonials .card-box--two {
+    margin-top: 40px;
+  }
 }
-.testimonials .card-box--three {
-  margin-top: 80px;
+@media (min-width: 1024px) {
+  .testimonials .card-box--three {
+    margin-top: 80px;
+  }
 }
 
 .bg-img {
@@ -136,16 +235,26 @@ body {
   left: 0;
 }
 .bg-img--top img {
-  width: 46vw;
-  height: 58vh;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .bg-img--top img {
+    width: 46vw;
+    height: 58vh;
+  }
 }
 .bg-img--bottom {
   bottom: 0;
   right: 0;
 }
 .bg-img--bottom img {
-  width: 83vw;
-  height: 78vw;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .bg-img--bottom img {
+    width: 83vw;
+    height: 78vw;
+  }
 }
 @media (min-width: 1820px) {
   .bg-img--bottom img {

@@ -1,12 +1,23 @@
 @use "../variables/colors" as colors;
+@import "../variables/breakpoints";
 
 body {
 	font-family: "Spartan";
 }
 
+.our-users-wrapper--top {
+	@include sc-breakpoint(1024) {
+		text-align: left;
+	}
+	text-align: center;
+}
+
 .main {
 	&-title {
-		font-size: 48px;
+		@include sc-breakpoint(768) {
+			font-size: 48px;
+		}
+		font-size: 32px;
 		font-weight: 700;
 		color: colors.$dark-purple;
 	}
