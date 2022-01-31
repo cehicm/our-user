@@ -139,6 +139,14 @@ body {
     margin-left: 40px;
   }
 }
+.reviews-wrapper--text a {
+  text-decoration: none;
+  color: #000000;
+}
+.reviews-wrapper--text a:hover, .reviews-wrapper--text a:active {
+  color: #ee69a4;
+  text-decoration: underline;
+}
 .reviews-wrapper--one {
   margin-right: 0;
 }
