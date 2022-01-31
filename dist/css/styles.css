@@ -1,3 +1,56 @@
+body {
+  font-family: "Spartan";
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #512051;
+}
+.main-text {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #927b91;
+}
+
+.review-wrapper--text {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: left;
+  color: #512051;
+}
+
+.card-box--name {
+  font-size: 13px;
+  color: #ffffff;
+}
+.card-box--status {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ee69a4;
+}
+.card-box--text {
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.our-users-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.bg-img {
+  position: absolute;
+}
+.bg-img--bottom {
+  bottom: 0;
+  right: 0;
+}
+
 /* spartan-500 - latin */
 @font-face {
   font-family: "Spartan";

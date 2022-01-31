@@ -1,0 +1,15 @@
+.our-users-wrapper {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+.bg-img {
+	position: absolute;
+
+	&--bottom {
+		bottom: 0;
+		right: 0;
+	}
+}
