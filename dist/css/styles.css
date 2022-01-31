@@ -42,6 +42,7 @@ body {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   .our-users-wrapper {
@@ -135,11 +136,21 @@ body {
   left: 0;
 }
 .bg-img--top img {
-  width: 1500px;
+  width: 46vw;
+  height: 58vh;
 }
 .bg-img--bottom {
   bottom: 0;
   right: 0;
+}
+.bg-img--bottom img {
+  width: 83vw;
+  height: 78vw;
+}
+@media (min-width: 1820px) {
+  .bg-img--bottom img {
+    height: 49vw;
+  }
 }
 
 /* spartan-500 - latin */
