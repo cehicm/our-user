@@ -57,12 +57,13 @@ body {
   padding: 0;
 }
 
+.section-wrapper {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
 .our-users-wrapper {
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
+  margin: 0 auto;
   z-index: 1;
 }
 @media (min-width: 1024px) {
@@ -75,17 +76,12 @@ body {
     width: 70vw;
   }
 }
-.our-users-wrapper--top {
-  margin-top: 550px;
-  margin-bottom: 50px;
-}
 @media (min-width: 1024px) {
   .our-users-wrapper--top {
     display: flex;
     gap: 20px;
     align-items: baseline;
     justify-content: space-between;
-    margin-top: 150px;
   }
 }
 .our-users--text-content {
@@ -109,6 +105,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
 }
 @media (min-width: 1024px) {
   .reviews {
@@ -116,11 +113,10 @@ body {
   }
 }
 .reviews-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px;
   margin-top: 14px;
   background-color: #f7f2f7;
   border-radius: 8px;
@@ -159,17 +155,7 @@ body {
 }
 @media (min-width: 1024px) {
   .reviews-wrapper--one {
-    margin-right: 80px;
-  }
-}
-@media (min-width: 1400px) {
-  .reviews-wrapper--one {
-    margin-right: 160px;
-  }
-}
-@media (min-width: 1820px) {
-  .reviews-wrapper--one {
-    margin-right: 80px;
+    margin-right: 16%;
   }
 }
 .reviews-wrapper--two {
@@ -177,17 +163,7 @@ body {
 }
 @media (min-width: 1024px) {
   .reviews-wrapper--two {
-    margin-right: 40px;
-  }
-}
-@media (min-width: 1400px) {
-  .reviews-wrapper--two {
-    margin-right: 80px;
-  }
-}
-@media (min-width: 1820px) {
-  .reviews-wrapper--two {
-    margin-right: 40px;
+    margin-right: 8%;
   }
 }
 
@@ -245,7 +221,7 @@ body {
 }
 
 .bg-img {
-  position: absolute;
+  position: fixed;
 }
 .bg-img--top {
   top: 0;
@@ -269,13 +245,13 @@ body {
 }
 @media (min-width: 1024px) {
   .bg-img--bottom img {
-    width: 83vw;
-    height: 78vw;
+    height: 60vw;
   }
 }
-@media (min-width: 1820px) {
+@media (min-width: 1400px) {
   .bg-img--bottom img {
-    height: 49vw;
+    width: 90vw;
+    height: 43vw;
   }
 }
 
