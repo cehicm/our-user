@@ -12,23 +12,32 @@
 	margin-bottom: 50px;
 }
 
+.wrapper {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
+
 .our-users {
 	&-wrapper {
-		margin: 0 auto;
 		z-index: 1;
+
 		@include sc-breakpoint(1024) {
 			width: 90vw;
 		}
 		@include sc-breakpoint(1820) {
 			width: 70vw;
 		}
-	}
-	&-wrapper--top {
-		@include sc-breakpoint(1024) {
-			display: flex;
-			gap: 20px;
-			align-items: baseline;
-			justify-content: space-between;
+
+		&--top {
+			margin-bottom: 50px;
+
+			@include sc-breakpoint(1024) {
+				display: flex;
+				gap: 20px;
+				align-items: baseline;
+				justify-content: space-between;
+			}
 		}
 	}
 
@@ -47,7 +56,6 @@
 				padding: 0 20px;
 			}
 		}
-		width: 90vw;
 	}
 }
 
@@ -55,13 +63,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 70%;
 
 	@include sc-breakpoint(1024) {
 		align-items: flex-end;
 	}
 
 	&-wrapper {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -81,6 +89,7 @@
 
 		&--text {
 			margin-top: 10px;
+
 			@include sc-breakpoint(1024) {
 				margin-left: 40px;
 				margin-top: 0;
@@ -104,12 +113,6 @@
 			@include sc-breakpoint(1024) {
 				margin-right: 16%;
 			}
-			// @include sc-breakpoint(1400) {
-			// 	margin-right: 160px;
-			// }
-			// @include sc-breakpoint(1820) {
-			// 	margin-right: 80px;
-			// }
 		}
 
 		&--two {
@@ -123,25 +126,23 @@
 }
 
 .testimonials {
-	@include sc-breakpoint(1024) {
-		flex-direction: row;
-		justify-content: space-between;
-	}
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	margin-bottom: 50px;
 
+	@include sc-breakpoint(1024) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	.card-box {
-		@include sc-breakpoint(1820) {
-			max-height: 214px;
-		}
-		max-height: 300px;
+		height: 100%;
 		padding: 35px 40px;
-		margin-bottom: 20px;
-		background-color: colors.$dark-purple;
 		border-radius: 8px;
 		box-sizing: border-box;
+		background-color: colors.$dark-purple;
 
 		&--top {
 			display: flex;
@@ -166,26 +167,26 @@
 
 		&--two {
 			@include sc-breakpoint(1024) {
-				margin-top: 40px;
+				margin-top: 4%;
 			}
 		}
 		&--three {
 			@include sc-breakpoint(1024) {
-				margin-top: 80px;
+				margin-top: 8%;
 			}
 		}
 	}
 }
 
 .bg-img {
-	position: fixed;
+	position: absolute;
 
 	&--top {
 		top: 0;
 		left: 0;
 		img {
 			@include sc-breakpoint(1024) {
-				width: 46vw;
+				width: 30vw;
 				height: 58vh;
 			}
 			width: 100%;
@@ -195,7 +196,10 @@
 	&--bottom {
 		bottom: 0;
 		right: 0;
+
 		img {
+			width: 100%;
+
 			@include sc-breakpoint(1024) {
 				height: 60vw;
 			}
@@ -203,7 +207,6 @@
 				width: 90vw;
 				height: 43vw;
 			}
-			width: 100%;
 		}
 	}
 }

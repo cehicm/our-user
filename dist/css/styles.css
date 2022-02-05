@@ -62,8 +62,13 @@ body {
   margin-bottom: 50px;
 }
 
-.our-users-wrapper {
+.wrapper {
+  width: 90%;
+  position: relative;
   margin: 0 auto;
+}
+
+.our-users-wrapper {
   z-index: 1;
 }
 @media (min-width: 1024px) {
@@ -76,6 +81,9 @@ body {
     width: 70vw;
   }
 }
+.our-users-wrapper--top {
+  margin-bottom: 50px;
+}
 @media (min-width: 1024px) {
   .our-users-wrapper--top {
     display: flex;
@@ -83,9 +91,6 @@ body {
     align-items: baseline;
     justify-content: space-between;
   }
-}
-.our-users--text-content {
-  width: 90vw;
 }
 @media (min-width: 1024px) {
   .our-users--text-content {
@@ -105,7 +110,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
 }
 @media (min-width: 1024px) {
   .reviews {
@@ -113,6 +117,7 @@ body {
   }
 }
 .reviews-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,6 +173,7 @@ body {
 }
 
 .testimonials {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -180,17 +186,11 @@ body {
   }
 }
 .testimonials .card-box {
-  max-height: 300px;
+  height: 100%;
   padding: 35px 40px;
-  margin-bottom: 20px;
-  background-color: #512051;
   border-radius: 8px;
   box-sizing: border-box;
-}
-@media (min-width: 1820px) {
-  .testimonials .card-box {
-    max-height: 214px;
-  }
+  background-color: #512051;
 }
 .testimonials .card-box--top {
   display: flex;
@@ -211,17 +211,17 @@ body {
 }
 @media (min-width: 1024px) {
   .testimonials .card-box--two {
-    margin-top: 40px;
+    margin-top: 4%;
   }
 }
 @media (min-width: 1024px) {
   .testimonials .card-box--three {
-    margin-top: 80px;
+    margin-top: 8%;
   }
 }
 
 .bg-img {
-  position: fixed;
+  position: absolute;
 }
 .bg-img--top {
   top: 0;
@@ -232,7 +232,7 @@ body {
 }
 @media (min-width: 1024px) {
   .bg-img--top img {
-    width: 46vw;
+    width: 30vw;
     height: 58vh;
   }
 }
